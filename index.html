@@ -53,6 +53,14 @@
             height: 16px;
             background-color: rgb(94, 94, 94);
         }
+
+        .menu {
+            background-color: rgb(94, 94, 94);
+            color: white;
+            padding: 2px;
+            border-radius: 2px;
+            font-size: 10pt;
+        }
     </style>
 </head>
 
@@ -63,53 +71,79 @@
             <td width="200"><strong>Key</strong></td>
             <td width="200"><strong>Scope</strong></td>
             <td><strong>Description</strong></td>
+            <td><strong>Menu</strong></td>
 
         </tr>
 
         <tr>
             <td><span class="key">T</span></td>
             <td>Interface</td>
-            <td>Show/Hide Toolbox</td>
+            <td>Show/Hide Toolar </td>
+            <td><span class="menu">View</span><strong>></strong><span class="menu">Toolbar</span></td>
         </tr>
         <tr>
             <td><span class="key">N</span></td>
             <td>Interface</td>
-            <td>Show/Hide Additional Quick Settings<br><i>Tranform, Location, Rotation etc.</i></td>
+            <td>Show/Hide Sidebar</td>
+            <td><span class="menu">View</span><strong>></strong><span class="menu">Sidebar</span></td>
         </tr>
         <tr>
             <td><span class="key">Num 5</span></td>
             <td>Viewport</td>
-            <td>Ortographic/Perspective View Mode</i></td>
+            <td>Ortographic/Perspective View Mode<br>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" xml:space="preserve">
+                    <path fill="#ffffff"
+                        d="M2.5 2a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-15a.5.5 0 0 0-.5-.5zM3 3h4v4H3zm5 0h4v4H8zm5 0h4v4h-4zM3 8h4v4H3zm5 0h4v4H8zm5 0h4v4h-4zM3 13h4v4H3zm5 0h4v4H8zm5 0h4v4h-4z" />
+                </svg>
+                /
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" xml:space="preserve">
+                    <path
+                        d="M5.75 3.5a.5.5 0 0 0-.482.37l-3.25 12a.5.5 0 0 0 .482.63h15a.5.5 0 0 0 .482-.63l-3.25-12a.5.5 0 0 0-.482-.37zm.383 1h2.086l-.217 2H5.59zm3.094 0h1.546l.217 2H9.01zm2.554 0h2.086l.541 2h-2.41zm-6.46 3h2.572l-.327 3H4.508zm3.58 0H11.1l.326 3H8.574zm3.206 0h2.573l.812 3h-3.058zm-7.87 4h3.22l-.434 4h-3.87zm4.23 0h3.066l.436 4H8.03zm4.076 0h3.22l1.085 4h-3.871z"
+                        fill="#ffffff" />
+                </svg>
+            </td>
         </tr>
         <tr>
             <td><span class="key">Num 1</span></td>
             <td>Viewport</td>
             <td>Front View</td>
+            <td><span class="menu">View</span><strong>></strong><span
+                    class="menu">Viewpoint</span><strong>></strong><span class="menu">Front</span></td>
         </tr>
         <tr>
             <td><span class="key">Num 3</span></td>
             <td>Viewport</td>
             <td>Right View</td>
+            <td><span class="menu">View</span><strong>></strong><span
+                    class="menu">Viewpoint</span><strong>></strong><span class="menu">Rightt</span></td>
         </tr>
         <tr>
             <td><span class="key">Num 7</span></td>
             <td>Viewport</td>
             <td>Top View</td>
+            <td><span class="menu">View</span><strong>></strong><span
+                    class="menu">Viewpoint</span><strong>></strong><span class="menu">Top</span></td>
         </tr>
         <tr>
             <td><span class="key">Num 0</span></td>
             <td>Viewport</td>
             <td>Camera View</td>
+            <td><span class="menu">View</span><strong>></strong><span
+                    class="menu">Viewpoint</span><strong>></strong><span class="menu">Camera</span></td>
         </tr>
         <tr>
             <td><span class="key">Num 9</span></td>
             <td>Viewport</td>
             <td>Opposite View<br><i>If Right View, this shows Left View</i></td>
+            <td><span class="menu">View</span><strong>></strong><span
+                    class="menu">Navigation</span><strong>></strong><span class="menu">Orbit Opposite</span></td>
         </tr>
         <tr>
             <td><span class="key">Ctrl</span><span class="key">Num <i>X</i></span></td>
             <td>Viewport</td>
             <td>Opposite View<br><i>eg: Ctrl+1 Back View or Ctrl+3 Left View</i></td>
+
+
         </tr>
         <tr>
             <td><span class="key">TAB</span></td>
@@ -142,13 +176,16 @@
         </tr>
         <tr>
             <td><span class="key">A</span></td>
-            <td>Object Mode</td>
-            <td>Select All <i>Objects</i></td>
+            <td>..</td>
+            <td>Select All</td>
+            <td><span class="menu">Select</span><strong>></strong><span class="menu">All</span></td>
         </tr>
         <tr>
             <td><span class="key">Alt</span><span class="key">A</span> or <span class="key">AA</span></td>
-            <td>Object Mode</td>
-            <td>Deselect Everything <i>(Objects)</i></td>
+            <td>..</td>
+            <td>Deselect Everything</td>
+            <td><span class="menu">Select</span><strong>></strong><span class="menu">None</span></td>
+
         </tr>
         <tr>
             <td><span class="key">A</span></td>
@@ -264,6 +301,36 @@
             <td><span class="key">Shift</span><span class="key">A</span></td>
             <td>Object Mode</td>
             <td>Add Menu<br> <i>Adds an object</i></td>
+        </tr>
+
+        <tr>
+            <td><span class="key">Ctrl</span><span class="key">R</span></td>
+            <td>Edit Mode</td>
+            <td>Loop Cut<br>
+            </td>
+            <td><span class="menu">Edge</span><strong>></strong><span class="menu">Loop Cut and Slide</span></td>
+        </tr>
+
+        <tr>
+            <td><span class="key">Shift</span><span class="key">Ctrl</span><span class="key">R</span></td>
+            <td>Edit Mode</td>
+            <td>Loop Cut Both Sides<br>
+            </td>
+            <td><span class="menu">Edge</span><strong>></strong><span class="menu">Offset Edge Slide</span></td>
+        </tr>
+        <tr>
+            <td><span class="key">Ctrl</span><span class="key">J</span></td>
+            <td>Object Mode</td>
+            <td>Join to one meshh<br>
+            </td>
+            <td><span class="menu">Object</span><strong>></strong><span class="menu">Join</span></td>
+        </tr>
+
+        <tr>
+            <td><span class="key">Ctrl</span><span class="key">G</span></td>
+            <td>Object Mode</td>
+            <td>Reset Transform - Location<br>
+            </td>
         </tr>
 
     </table>
